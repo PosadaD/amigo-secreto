@@ -7,7 +7,7 @@ const resultado = document.getElementById("resultado");
 
 function agregarAmigo(){
     const elementList = document.createElement("li")
-    const nameRegex = /[^a-z]/;
+    const nameRegex = /[^a-z]/i;
     if(nuevoAmigo.value == "" || nameRegex.test(nuevoAmigo.value)){
         alert("Ingrese un nombre valido");
     }else{
